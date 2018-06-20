@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MARVEL QUIZ</title>
+
+  <!-- Responsive viewport tag, tells small screens that it's responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Normalize.css, a cross-browser reset file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> -->
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/float-grid.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="row">
+      <div class="col-12">
+        <h1>MARVEL QUIZ</h1>
+        <p></p>
+      </div>
+    </div>
+  </header>
+  
+  <main role="main">
+    <!-- <div id="results" ></div> -->
+
+    <form id="feedbackquiz" class="hidden" role="form">
+      <div class="row">
+        <div class="col-12">
+          <p class="feedback-for-user"></p>      
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="start-content">
+              <input type="button" value="NEXT" class="center-button">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+
+    <form id="questionForm" role="form">
+      <fieldset>
+            <div class="row">
+      <div class="col-6">
+        <p> Question <span class="question-count">1</span></p>
+      </div>
+          <div class="col-6">
+        <p> Score <span class="score-count">0</span> of 10</p>
+      </div>
+    </div>
+
+    <section class="quizModel" role="section">
+    <div class="row">
+      <div class="col-12">
+        <p class="quizQuestion"> What superhero was not in Captain America Civil War? </p>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-6">
+        <div class="card">
+          
+          <div class="card-content">
+            <h3>A.</h3>
+            <input type="submit" value="The Vision" name="answerA" class="user-answer">
+          </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+      <div class="card">
+        
+        <div class="card-content">
+          <h3>B.</h3>
+          <input type="submit" value="Thor" name="answerB" class="user-answer">
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="row">
+
+        <div class="col-6">
+      <div class="card">
+        
+        <div class="card-content">
+          <h3>C.</h3>
+          <input type="submit" value="Black Panther" name="answerC">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="card">
+        
+        <div class="card-content">
+          <h3>D.</h3>
+          <input type="submit" value="Ant-man" name="answerD">
+        </div>
+      </div>
+    </div>
+
+   </div>
+  </section>
+      </fieldset>
+    </form>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
